@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1730">
+  <title>Laboratório APS — Lista 05</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand-icon" aria-hidden="true">⌘</div>
+    <div class="brand-copy">
+      <strong>Laboratório APS</strong>
+      <span>Lista 05 · Análise e Projeto de Software</span>
+    </div>
+    <div class="topbar-right">Estudo prático · offline</div>
+  </header>
+
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="sidebar-title">EXERCÍCIOS</div>
+      <nav id="exercise-list" aria-label="Escolha o exercício"></nav>
+      <div class="sidebar-note">
+        <strong>Como funciona</strong>
+        <p>Arraste ou toque nos blocos para montar uma resposta. Confira a correção e a explicação dos pontos que faltaram.</p>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <section class="intro">
+        <div class="eyebrow" id="exercise-id">EXERCÍCIO 07</div>
+        <h1 id="exercise-title">Diagramas de Casos de Uso</h1>
+        <p id="exercise-description"></p>
+        <div class="legend" id="exercise-tags"></div>
+      </section>
+
+      <section class="workspace-panel" aria-label="Editor interativo">
+        <div class="panel-heading">
+          <div>
+            <span class="panel-eyebrow">ÁREA DE TRABALHO</span>
+            <h2 id="workspace-title">Construa sua resposta</h2>
+          </div>
+          <div class="toolbar">
+            <button id="reset-button" class="btn btn-subtle" type="button">↺ Recomeçar</button>
+            <button id="check-button" class="btn btn-primary" type="button">✓ Verificar resposta</button>
+          </div>
+        </div>
+
+        <div class="workspace-layout" id="workspace-layout"></div>
+        <div class="feedback" id="feedback" aria-live="polite"></div>
+      </section>
+
+      <footer class="footer">
+        Base: <em>atividade05_revisao_master_class.md</em> e materiais de Análise e Projeto de Software.
+        O arquivo não inclui gabarito explícito; a correção usa uma solução de referência didática e aceita algumas variações justificáveis.
+      </footer>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
