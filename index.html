@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0b1730">
-  <title>Laboratório APS — 3 listas</title>
+  <title>Laboratório APS — 3 listas + Reforço UML</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,7 +12,7 @@
     <div class="brand-icon" aria-hidden="true">⌘</div>
     <div class="brand-copy">
       <strong>Laboratório APS</strong>
-      <span>Três listas · Casos de Uso e Sequência</span>
+      <span>3 listas, enunciados originais e Reforço UML</span>
     </div>
     <div class="topbar-right">Estudo prático · offline</div>
   </header>
@@ -24,6 +24,7 @@
         <button type="button" class="list-tab" data-list="Lista 03">Lista 03</button>
         <button type="button" class="list-tab" data-list="Lista 04">Lista 04</button>
         <button type="button" class="list-tab" data-list="Lista 05">Lista 05</button>
+        <button type="button" class="list-tab" data-list="Reforço UML">★ Include / Extend</button>
       </div>
       <nav id="exercise-list" aria-label="Escolha o exercício"></nav>
       <div class="sidebar-note">
@@ -38,6 +39,7 @@
         <h1 id="exercise-title">Diagramas de Casos de Uso</h1>
         <p id="exercise-description"></p>
         <div class="legend" id="exercise-tags"></div>
+        <details id="statement-panel" class="statement-panel" open><summary><span>📖 Enunciado da atividade</span><span class="statement-hint">Clique para expandir ou recolher</span></summary><div id="statement-source" class="statement-source"></div><div id="statement-body" class="statement-body"></div></details>
       </section>
 
       <section class="workspace-panel" aria-label="Editor interativo">
@@ -63,6 +65,6 @@
     </main>
   </div>
 
-  <script src="app.js"></script>
+  <script src="app.js" defer></script>
 </body>
 </html>
