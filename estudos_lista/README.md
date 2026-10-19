@@ -1,46 +1,50 @@
-# Laboratório APS — Lista 05
+# Laboratório APS — 3 Listas (versão 2)
 
-Ferramenta didática offline construída em HTML, CSS e JavaScript.
+Aplicação web estática, offline e sem dependências externas, voltada à prática visual de Análise e Projeto de Software.
 
-## Como usar
+## Fontes usadas
 
-1. Abra `index.html` em um navegador atualizado (Chrome ou Edge recomendado no computador).
-2. Escolha o exercício na barra lateral.
-3. Toque nos cartões ou arraste os blocos para montar a resposta.
-4. Em Diagramas de Casos de Uso, ative **Conectar** e selecione um ator e um Caso de Uso.
-5. Em Diagramas de Sequência, acrescente as mensagens, ajuste sua ordem, selecione emissor e destinatário e, quando aplicável, a condição do fragmento `alt`.
-6. Clique em **Verificar resposta** para obter correção, pontuação e comentários.
-7. O botão **Mostrar exemplo no editor** fica disponível após uma verificação, para comparar uma solução de referência.
+- `ATIVIDADE03_analise_projeto.md` — Lista 03, exercícios de RN/RF/RNF, UCs, atores, checklist e rastreabilidade.
+- `ATIVIDADE04_DIAGRAMA_SEQUENCIA.MD` — Lista 04, exercícios 16–24 (partes de sequência, alternativas, repetição e responsabilidades).
+- `atividade05_revisao_master_class.md` — Lista 05, exercícios 1–10 (partes modeláveis visualmente).
 
-## Exercícios contemplados
+**Atenção:** esses materiais não fornecem gabarito oficial completo. A ferramenta usa **modelos de referência didáticos**, com esclarecimentos para pontos que dependem de escolhas de projeto. Se uma modelagem diferente satisfizer as regras, pode estar correta mesmo que o verificador mostre divergência com o exemplo.
 
-- **5:** identificar problemas em uma especificação vaga de Caso de Uso.
-- **6:** compor um Caso de Uso de hotel com objetivo, ator, pré/pós-condições, fluxos e regras.
-- **7:** construir o Diagrama de Casos de Uso do restaurante.
-- **8:** construir o Diagrama de Sequência de consulta de produto.
-- **9:** construir o Diagrama de Sequência de saque bancário com `alt`.
-- **10B, 10C e 10D:** especificar o Caso de Uso e construir os diagramas da clínica.
+## Funcionalidades
 
-Os exercícios 1 a 4 e 10A/10E (parte conceitual/regras/requisitos) não estão automatizados nesta primeira versão.
+- 31 atividades: 10 da Lista 03; 8 da Lista 04; 13 da Lista 05.
+- Classificação de cartões por categorias (clique ou arraste).
+- Questões de assinalar, com explicação na correção.
+- Construção guiada de especificações de Caso de Uso.
+- Diagramas de Casos de Uso com atores, elipses, associações e fronteira.
+- Diagramas de Sequência com ordenação de mensagens, emissor, destinatário, chamada/retorno e guardas.
+- Fragmentos `alt` e `loop` desenhados quando adequados ao exercício.
+- Avisos de elementos ausentes, relações indevidas, mensagens trocadas, tipos de seta, ordem, condições e posicionamento.
+- Exemplo no editor depois de solicitar a correção.
+- Salva automaticamente respostas em `localStorage` do navegador quando disponível.
 
-## Sobre o gabarito
+## Abrir
 
-O arquivo `atividade05_revisao_master_class.md` não fornece gabarito explícito. As respostas de referência foram elaboradas a partir dos enunciados e dos materiais de aula, e servem como **correção didática**, não como gabarito oficial.
+Opção A: abrir `laboratorio_aps_3_listas.html` diretamente no navegador — HTML com CSS e JavaScript internos, sem instalar nada.
 
-É possível obter um modelo UML ou especificação diferente e ainda correto. O verificador procura os elementos e relações previstos nos exemplos incluídos no programa; por isso, soluções equivalentes mas estruturalmente diferentes podem ser marcadas como divergentes. A ordem entre validação de datas e consulta de disponibilidade no Caso de Uso de hotel é flexível, desde que ambas antecedam o registro da reserva.
+Opção B: extrair o ZIP, manter `index.html`, `style.css` e `app.js` juntos, e abrir `index.html`.
 
-O Exercício 5, que não define o tipo de reserva, mostra uma reescrita **hipotética** para reserva de quarto apenas como ilustração.
+Para publicar com GitHub Pages, copie os três arquivos da opção B para o diretório servido pelo Pages (renomear a pasta ou ajustar a URL conforme o repositório). O `index.html` deve permanecer junto dos arquivos CSS/JS.
 
-## Tecnologia e privacidade
+## Limitações
 
-- Sem servidor, sem dependências externas, sem contas.
-- O progresso é armazenado somente no `localStorage` do navegador/dispositivo utilizado, quando permitido.
-- Blocos arrastáveis no computador; tocar para adicionar e usar os botões de movimentação no celular.
+- Avaliação automática por referência, **não validação universal de UML**. A notação e a modelagem podem admitir outras soluções corretas.
+- Nomes de classes como Tela*, *Controller, *Service e *Repository são propostos onde o enunciado não fornece nomes obrigatórios.
+- A Lista 04 trata de uma clínica com paciente operando o sistema e a Lista 05 de uma clínica cujo atendente registra consultas; esses exercícios são mantidos separados.
+- Algumas perguntas discursivas que dependem do projeto real do grupo não foram digitalizadas integralmente, pois não existe resposta única conferível sem o projeto.
 
-## Estrutura
+## Testes executados
 
-- `index.html`: interface.
-- `style.css`: apresentação responsiva.
-- `app.js`: exercícios, interações, desenho SVG, validação e explicações.
+- Verificação de sintaxe do JavaScript.
+- 31 modelos de referência: pontuação máxima na correção lógica.
+- Testes negativos nas cinco modalidades de correção.
+- Testes de interface no Chromium via conteúdo local em memória, para os diferentes formatos.
 
-Para o arquivo que funciona sozinho, use `laboratorio_aps_lista05.html` fornecido separadamente.
+## Licença/uso
+
+Material didático adaptado dos enunciados fornecidos para prática pessoal. Não é um gabarito do professor.
